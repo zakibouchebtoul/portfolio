@@ -6103,7 +6103,33 @@ html {
     color: var(--color-primary-hover);
     transform: scale3d(1.08, 1.08, 1.01);
   }
-  
+  svg path {
+    fill: #0B0E2C;
+    margin-left: 6px;
+    display: inline-block;
+  }
+  .btn-secondary:hover .line-rounded-icon svg path {
+    fill: white; /* Replace with the desired color */
+}
+.btn-secondary .line-rounded-icon svg path {
+  fill: #0B0E2C; /* Default SVG color */
+  transition: fill 0.3s; /* Smooth transition for SVG color change */
+}
+
+.btn-secondary:hover .line-rounded-icon svg path,
+.btn-secondary:focus .line-rounded-icon svg path,
+.btn-secondary:active .line-rounded-icon svg path,
+.btn-secondary.w--current .line-rounded-icon svg path {
+  fill: #fff; /* SVG color when hovered, focused, active, or current */
+}
+
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.w--current {
+  background-color: #fff; /* Background color when focused, active, or current */
+  color: #000; /* Text color when focused, active, or current */
+  outline: none; /* Remove default focus outline */
+}
   .line-rounded-icon {
     font-family: Line Rounded Icons, sans-serif;
   }
