@@ -16,7 +16,9 @@ html {
     vertical-align: baseline;
     display: inline-block;
   }
-  
+    .more-templates-lottie svg path{
+    fill: #4c00ff;
+  }
   audio:not([controls]) {
     height: 0;
     display: none;
